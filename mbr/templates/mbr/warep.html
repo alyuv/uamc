@@ -1,0 +1,12 @@
+{% extends 'mbr/base.html' %}
+{% block content %}
+    <body onload="initOpenLayersMap();">
+    <div class="mbr_content">
+        <script type="text/javascript">
+            var warepstormlist = {{ wareplist.storm|safe }},
+                warepavialist = {{ wareplist.avia|safe }};
+        </script>
+    </div>
+    <div id="mapid"></div>
+    </body>
+{% endblock %}

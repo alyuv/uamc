@@ -1,0 +1,51 @@
+{% load i18n %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans MeteoBriefingNew %}</title>
+    <meta name="description" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{% static 'mbr/img/favicon.ico' %}" rel="icon">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/css/bootstrap-grid-3.3.5.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/libs/font-awesome-4.6.3/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/libs/leaflet/leaflet.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/libs/leaflet-openweathermap/leaflet-openweathermap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/css/fonts.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/css/media.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mbr/css/login.css' %}">
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'mbr/libs/html5shiv/es5-shim.min.js' %}"></script>
+    <script src="{% static 'mbr/libs/html5shiv/html5shiv.min.js' %}"></script>
+    <script src="{% static 'mbr/libs/html5shiv/html5shiv-printshiv.min.js' %}"></script>
+    <script src="{% static 'mbr/libs/html5shiv/html5shiv-printshiv.min.js' %}"></script>
+        <![endif]-->
+    <script src="{% static 'mbr/libs/leaflet/leaflet.js' %}"></script>
+    <script src="{% static 'mbr/libs/leaflet-openweathermap/leaflet-openweathermap.js' %}"></script>
+    <script type="text/javascript" src=""></script>
+    <script src="{% static 'mbr/js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'mbr/js/main.js' %}"></script>
+    <script src="{% static 'mbr/js/mapping.js' %}"></script>
+
+</head>
+<body>
+    {% block header %}
+        {% include 'mbr/header.html' %}
+    {% endblock %}
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% block footer %}
+        {% include 'mbr/footer.html' %}
+    {% endblock %}
+<script>
+
+</script>
+</body>
+</html>

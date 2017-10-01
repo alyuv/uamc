@@ -1,0 +1,45 @@
+{% load template_tag %}
+{% load i18n %}
+
+<div class="sigmet_airmet_block">
+    <fieldset>
+        {% if form|data_form:'airmet' %}
+            <legend>
+                {% trans "SIGMET, AIRMET" %}
+            </legend>
+        {% else %}
+            <legend>
+                {% trans "SIGMET" %}
+            </legend>
+        {% endif %}
+        {% for index in fir_index %}
+            <div class="info_content">
+                <div class="sigmet_airmet">
+                    <div class="index">{{ index }}</div>
+                    {% if index in correct_fir %}
+                        <div class="sigmet">
+                            {% for sigmet in sigmets|access:index %}
+                                <div class="{{ sigmet.message_class }}">
+                                    {{ sigmet.message }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                        {% if form|data_form:'airmet' %}
+                            <div class="airmet">
+                                {% for airmet in airmets|access:index %}
+                                    <div class="{{ airmet.message_class }}">
+                                        {{ airmet.message }}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% else %}
+                        <div class="error_index">
+                            {% blocktrans %}FIR with index {{ index }} is absent in our database{% endblocktrans %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </fieldset>
+</div>

@@ -1,0 +1,35 @@
+<div class="login">
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+    <div id="container">
+        <div id="header">
+            <div id="branding">
+                <div id="site-name">Meteobrifing login</div>
+
+            </div>
+        </div>
+        <div id="content" class="colM">
+            <div id="content-main">
+                <form id="login-form" action={% url 'login' %} method="post">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <label class="required" for="id_username">Username:</label>
+                        <input id="id_username" autofocus="" maxlength="50" name="username" required="" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label class="required" for="id_password">Password:</label>
+                        <input id="id_password" name="password" required="" type="password">
+                        <input name="next" value="{{ next }}" type="hidden">
+                    </div>
+                    <div class="submit-row">
+                        <input value="Log in" type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

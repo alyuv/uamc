@@ -1,0 +1,51 @@
+{% load template_tag %}
+{% load i18n %}
+<div class="opmet">
+    <fieldset>
+        <legend>
+            {% trans "OPMET" %}
+        </legend>
+        {% for index in airports %}
+            <div class="info_content">
+                <div class="opmet_airport">
+                    <div class="index">{{ index }}</div>
+                    {% if index in correct_airports %}
+                        <div class="observation">
+                            <div class="{{ observation|access:index|access:'message_class' }}">
+                                {{ observation|access:index|access:'message' }}
+                                <div>
+                                    <a class="decode" id="decode-{{ observation|access:index|access:'id' }}"
+                                       href="javascript:void(0);">Decode</a>
+                                </div>
+                            </div>
+                            <div class="metar_expand" id="expand-{{ observation|access:index|access:'id' }}"
+                                 style="display:none;">
+                                <pre>{{ observation|access:index|access:'message_decoded' }} </pre>
+                                {# |linebreaksbr #}
+                            </div>
+                        </div>
+                        <div class="forecast ">
+                            <div class="{{ forecast|access:index|access:'message_class' }}">
+                                {{ forecast|access:index|access:'message' }}
+                                <div>
+                                    <a class="decode" id="decode-{{ forecast|access:index|access:'id' }}"
+                                       href="javascript:void(0);">Decode</a>
+                                </div>
+
+                            </div>
+
+                            <div class="taf_expand" id="expand-{{ forecast|access:index|access:'id' }}"
+                                 style="display:none;">
+                                <pre>{{ forecast|access:index|access:'message_decoded' }} </pre>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="error_index">
+                            {% blocktrans %}Airport with index {{ index }} is absent in our database{% endblocktrans %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </fieldset>
+</div>

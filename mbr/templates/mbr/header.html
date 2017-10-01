@@ -1,0 +1,19 @@
+{% load i18n %}
+<header>
+    <div id="header">
+        {% if not user.is_authenticated %}
+            <div id="user-tools">Welcome to MeteoBriefing</div>
+        {% else %}
+            <div id="user-tools"> Welcome, <strong>{% firstof user.get_short_name user.get_username %}</strong>. <a
+                    href="{% url 'logout' %}">Log out</a></a>
+            </div>
+        {% endif %}
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href={% url 'mbr_home' %}>{% trans 'Home' %}</a></li>
+            <li><a href={% url 'mbr_flight_data' %}>{% trans 'Meteo Briefing' %}</a></li>
+            <li><a href={% url 'contacts' %}>{% trans 'Contacts' %}</a></li>
+        </ul>
+    </nav>
+</header>

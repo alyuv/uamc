@@ -1,0 +1,9 @@
+<h1>Add Flights</h1>
+
+<form action="{% url 'mbr_add_flight' %}" method="POST">
+  {% csrf_token %}
+  <ul>
+    {{ form.as_ul }}
+  </ul>
+  <input id="save_contact" type="submit" value="Save" />
+</form>

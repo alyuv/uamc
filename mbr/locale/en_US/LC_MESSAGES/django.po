@@ -1,0 +1,1314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-01 18:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\mbr\forms.py:12 .\mbr\forms.py:24
+msgid "Enter a valid index"
+msgstr ""
+
+#: .\mbr\forms.py:58
+msgid "Select one of the region"
+msgstr ""
+
+#: .\mbr\forms.py:67
+msgid "Select one of the fly level"
+msgstr ""
+
+####################################################################################
+msgid "METAR"
+msgstr "Regular meteorological report of the aerodrome"
+
+msgid "SPECIAL"
+msgstr "Special meteorological report of the aerodrome"
+
+msgid "TAF"
+msgstr "Terminal aerodrome forecast"
+
+msgid "COR"
+msgstr ", corrected"
+
+msgid "AMD"
+msgstr ", amended"
+
+msgid "RTD"
+msgstr ", delayed"
+
+msgid "AUTO"
+msgstr ", automatic"
+
+msgid "NIL"
+msgstr "is missing"
+
+msgid "UNKNOWN_TYPE"
+msgstr "Unknown report type "
+
+msgid "CORRECTED_REGULAR_REPORT_OF_THE_AERODROME"
+msgstr "Corrected regular report of the aerodrome"
+
+msgid "REGULAR_REPORT_OF_THE_AERODROME"
+msgstr "Regular report of the aerodrome "
+
+msgid "CORRECTED_SPECIAL_METEOROLOGICAL_REPORT_OF_THE_AERODROME"
+msgstr  "Corrected special meteorological report of the aerodrome"
+
+msgid "SPECIAL_METEOROLOGICAL_REPORT_OF_THE_AERODROME"
+msgstr "Special meteorological report of the aerodrome"
+
+msgid "CORRECTED_TERMINAL_AERODROME_FORECAST" 
+msgstr "Corrected terminal aerodrome forecast"
+
+msgid "AMENDED_TERMINAL_AERODROME_FORECAST" 
+msgstr "Amended terminal aerodrome forecast"
+
+msgid "TERMINAL_AERODROME_FORECAST"
+msgstr "Terminal aerodrome forecast"
+
+msgid "NO_SIGNIFICANT_CHANGES"
+msgstr "no significant changes"
+
+msgid "TEMPORARY"
+msgstr "temporary"
+
+msgid "BECOMING"
+msgstr "becoming"
+
+msgid "PROB30"
+msgstr "probability 30% "
+
+msgid "PROB40"
+msgstr "probability 40% "
+
+msgid "MISSING"
+msgstr "missing"
+
+msgid "AUTOMATED"
+msgstr "automated"
+
+msgid "CANCELLED"
+msgstr "cancelled"
+
+msgid "AERODROME"
+msgstr ", of the aerodrome "
+
+
+msgid "FOR_UTC"
+msgstr "for {0}:{1} UTC on day {2}"
+
+msgid "BETWEEN_UTC_AND_UTC"
+msgstr "between {0}th {1}:00 UTC and {2}th {3}:00 UTC"
+
+#WIND
+msgid "WIND" 
+msgstr "wind:"
+
+msgid "VARIABLE" 
+msgstr "variable at {0}"
+
+msgid "VARIATIONS"
+msgstr "variations in wind direction from {0} to {1} at {2}"
+
+msgid "WIND_DIRECT_SPEED"
+msgstr "{0} at {1}"
+
+msgid "M/S"
+msgstr "m/s"
+
+msgid "KNOTS"
+msgstr "knots"
+
+msgid "KM/H"
+msgstr "km/h"
+
+msgid "GUSTING"
+msgstr ", gusting to {0}"
+
+msgid "CALM"
+msgstr "calm"
+
+msgid "NO_DATA_ABOUT_WIND"
+msgstr "no data about wind"
+
+
+msgid "THE_WEATHER_CONDITIONS_ARE_GOOD" 
+msgstr "the weather conditions are good"
+
+#VISIBILITY
+
+msgid "CAVOK"
+msgstr "visibility: 10000 meters or more and no significant weather change"
+
+msgid "VISIBILITY"
+msgstr "visibility:"
+
+msgid "MIN_VISIBILITY"
+msgstr "; minimal visibility:"
+
+msgid "VISIBILITY_AND_DIR"
+msgstr "{0} to {1}"
+
+msgid "VIS_UNITS"
+msgstr "M"
+
+msgid "VIS_DEGREES"
+msgstr " {0} degrees"
+
+msgid "VIS_NO_DATA"
+msgstr "visibility: no data"
+
+msgid "VIS_MORE_10KM"
+msgstr "visibility: more 10 km"
+
+msgid "VIS_METERS"
+msgstr "visibility: {1}{0} meters;"
+
+msgid "MVIS_METERS"
+msgstr "minimal visibility: {1}{0} meters"
+
+msgid "NDV"
+msgstr "no direction visibility"
+
+msgid "MORE"
+msgstr "more then "
+
+msgid "LESS"
+msgstr "less then "
+
+#DIRECTIONS
+msgid "NORTHWARD"
+msgstr "northward"
+
+msgid "EASTWARD"
+msgstr "eastward"
+
+msgid "SOUTHERLY"
+msgstr "southerly"
+
+msgid "WESTERLY"
+msgstr "westerly"
+
+msgid "NORTHEASTERLY"
+msgstr "northeasterly"
+
+msgid "SOUTHEASTERLY"
+msgstr "southeasterly"
+
+msgid "SOUTHWESTERLY"
+msgstr "southwesterly"
+
+msgid "NORTHWESTERLY"
+msgstr "northwesterly"
+
+msgid "MORE_10_KM"
+msgstr "more 10 km"
+
+msgid "VISIBILITY_IN_THE_DIRECTION"
+msgstr ", in the {0} direction"
+
+msgid "METERS"
+msgstr " meters"
+
+msgid "RUNWAY_VISIBILITY_RANGE"
+msgstr "runway visibility range on runway {0}, from {1} to {2}"
+
+msgid "RUNWAY_VISIBILITY"
+msgstr "runway visibility range on runway {0}, {1}"
+
+msgid "VISUAL_RANGE_ON_RUNWAY"
+msgstr "visual range on runway "
+
+# Translation of the present-weather codes
+
+msgid "PRESENT_WEATHER"
+msgstr "present weather"
+
+msgid "RECENT"
+msgstr "recent"
+
+#WEATHER_INT
+
+msgid "LIGHT"
+msgstr "light"
+
+msgid "HEAVY"
+msgstr "heavy"
+
+msgid "NEARBY_LIGHT"
+msgstr "nearby light"
+
+msgid "NEARBY_HEAVY"
+msgstr "nearby heavy"
+
+msgid "NEARBY"
+msgstr "nearby"
+
+#WEATHER_DESC
+
+msgid "SHALLOW"
+msgstr "shallow"
+
+msgid "PARTIAL"
+msgstr "partial"
+
+msgid "PATCHES_OF"
+msgstr "patches of"
+
+msgid "LOW_DRIFTING"
+msgstr "low drifting"
+
+msgid "BLOWING"
+msgstr "blowing"
+
+msgid "SHOWERS"
+msgstr "showers"
+
+msgid "THUNDERSTORM"
+msgstr "thunderstorm"           
+                
+msgid "FREEZING"               
+msgstr "freezing"    
+
+#WEATHER_DESC
+
+msgid "DRIZZLE"
+msgstr "drizzle"
+
+msgid "RAIN"
+msgstr "rain"
+
+msgid "SNOW"
+msgstr "snow"
+
+msgid "SNOW_GRAINS"
+msgstr "snow grains"
+
+msgid "ICE_CRYSTALS"
+msgstr "ice crystals"
+
+msgid "ICE_PELLETS"
+msgstr "ice pellets"
+
+msgid "HAIL"
+msgstr "hail"
+
+msgid "SNOW_PELLETS"
+msgstr "snow pellets"
+
+msgid "UNKNOWN_PRECIPITATION"
+msgstr "unknown precipitation"
+
+#WEATHER_OBSC
+
+msgid "MIST"
+msgstr "mist"
+
+msgid "FOG"
+msgstr "fog"
+
+msgid "SMOKE"
+msgstr "smoke"
+
+msgid "VOLCANIC_ASH"
+msgstr "volcanic ash"
+
+msgid "DUST"
+msgstr "dust"
+
+msgid "SAND"
+msgstr "sand"
+
+msgid "HAZE"
+msgstr "haze"
+
+msgid "SPRAY" 
+msgstr "spray"
+
+#WEATHER_OTHER
+
+msgid "SAND_WHIRLS"
+msgstr "sand whirls"
+
+msgid "SQUALLS"
+msgstr "squalls"
+
+msgid "FUNNEL_CLOUD" 
+msgstr "funnel cloud"
+
+msgid "SANDSTORM"
+msgstr "sandstorm"
+
+msgid "DUST_STORM"
+msgstr "dust storm"
+
+msgid "NO_SIGNIFICANT_WEATHER"
+msgstr "no significant weather changes"
+
+#WEATHER_SPECIAL
+
+msgid "TORNADO"
+msgstr "tornado"
+
+#SKY_COVER
+
+msgid "CLOUDS"
+msgstr "clouds"
+
+
+msgid "NO_SIGNIFICANT_CLOUDS" 
+msgstr "no significant clouds"
+
+msgid "AUTO_MONITOR_SYSTEM_DOES_NOT_DETECT_CLOUDS" 
+msgstr "automatic monitoring system does not detect clouds"
+
+msgid "CLEAR"
+msgstr "clear"
+
+msgid "A_FEW"
+msgstr "a few "
+
+msgid "SCATTERED"
+msgstr "scattered "
+
+msgid  "BROKEN"
+msgstr "broken "
+
+msgid  "OVERCAST"
+msgstr "overcast"
+
+msgid  "INDEFINITE_CEILING"
+msgstr "indefinite ceiling"
+
+#CLOUD_TYPE
+
+msgid "TOWERING_CUMULUS"
+msgstr "towering cumulus"
+
+msgid "CUMULUS" 
+msgstr "cumulus"
+
+msgid "CUMULONIMBUS"
+msgstr "cumulonimbus"
+
+msgid "STRATOCUMULUS"
+msgstr "stratocumulus"
+
+msgid "CUMULONIMBUS_MAMMATUS"
+msgstr "cumulonimbus mammatus"
+
+msgid "ALTOCUMULUS_CASTELLANUS"
+msgstr "altocumulus castellanus"
+
+msgid "STANDING_LENTICULAR_STRATOCUMULUS"
+msgstr "standing lenticular stratocumulus"
+
+msgid "STANDING_LENTICULAR_CIRROCUMULUS"
+msgstr "standing lenticular cirrocumulus"
+
+msgid "STANDING_LENTICULAR_ALTOCUMULUS"
+msgstr "standing lenticular altocumulus"
+
+msgid "VERTICAL_VISIBILITY"
+msgstr "{0}{1}, visibility to {2}"
+
+msgid "SKY_COVER"
+msgstr "{0}{1} at {2}"
+
+#TEMPERATURE and DEWPOINT
+msgid "TEMPERATURE"
+msgstr "temperature: {0}"
+
+msgid "DEWPOINT"
+msgstr "dew point: {0}"
+
+#MAX MIN TEMPERATURE
+msgid "MAXIMUM_TEMPERATURE_PREDICTED" 
+msgstr "the maximum temperature is predicted to be {0} on {1}-th at {2}:00 UTC"
+
+msgid "MINIMUM_TEMPERATURE_PREDICTED" 
+msgstr "the minimum temperature is predicted to be {0} on {1}-th at {2}:00 UTC"
+
+
+#PRESSURE
+msgid "PRESSURE" 
+msgstr "the atmospheric pressure: {0}"
+
+#RUNWAY STATE
+msgid "RUNWAY_STATE_OF" 
+msgstr "runway state of"
+
+msgid "SNOCLO" 
+msgstr "aerodrome is closed due to extreme deposit of snow"
+
+msgid "CLRD" 
+msgstr "cleared"
+
+msgid "FRICTION"
+msgstr "friction coefficient {0:.2f}"
+
+msgid "STATE_REPORT_IS_NOT_AVAILABLE"
+msgstr "state report is not available "
+
+msgid "ALL_RUNWAY"
+msgstr "all runway"
+
+msgid "RIGHT"
+msgstr "right"
+
+msgid "CENTRAL"
+msgstr "central"
+
+msgid "LEFT"
+msgstr "left"
+
+#DEPOSIT
+msgid "CLEAR_AND_DRY" 
+msgstr "clear and dry"
+
+msgid "DAMP" 
+msgstr "damp"
+
+msgid "WET_AND_WATER_PATCHES" 
+msgstr "wet and water patches"
+
+msgid "RIME_AND_FROST_COVERED" 
+msgstr "rime and frost covered"
+
+msgid "DRY_SNOW" 
+msgstr "dry snow"
+
+msgid "WET_SNOW" 
+msgstr "wet snow"
+
+msgid "SLUSH" 
+msgstr "slush"
+
+msgid "ICE" 
+msgstr "ice"
+
+msgid "COMPACTED_OR_ROLLED_SNOW" 
+msgstr "compacted or rolled snow"
+
+msgid "FROZEN_RUTS_OR_RIDGES" 
+msgstr "frozen ruts or ridges"
+
+msgid "TYPE_OF_DEPOSIT_NOT_REPORTED" 
+msgstr "type of deposit not reported"
+
+#EXTENT    
+msgid "PERCENT_OF_RUNWAY_LESS_THAN" 
+msgstr "less than 10 percent of runway"
+
+msgid "PERCENT_OF_RUNWAY" 
+msgstr "{0} percent of runway"
+
+msgid "EXTENT_CONTAMINATION_NOT_REPORTED" 
+msgstr "extent contamination not reported"
+
+#DEPTH     
+msgid "DEPTH_LESS_THAN_1_MM" 
+msgstr "depth less than 1 mm"
+
+msgid "DEPTH_MM" 
+msgstr "depth {0} mm"
+
+msgid "DEPTH_CM" 
+msgstr "depth {0} cm"
+
+msgid "DEPTH_CM_40" 
+msgstr "depth 40 cm or more"
+
+msgid "CLOSED_DUE_TO_SNOW" 
+msgstr "closed due to snow"
+
+msgid "DEPTH_NOT_MEASURABLE" 
+msgstr "depth of deposit operationally not significant or not measurable"
+
+msgid "CLEAN" 
+msgstr "clean"
+
+#FRICTION
+msgid "FRICTION_POOR" 
+msgstr "friction action poor"
+
+msgid "FRICTION_MEDIUM_POOR" 
+msgstr "friction action medium/poor"
+
+msgid "FRICTION_MEDIUM" 
+msgstr "friction action medium"
+
+msgid "FRICTION_MEDIUM_GOOD" 
+msgstr "friction action medium/good"
+
+msgid "FRICTION_GOOD" 
+msgstr "friction action good"
+
+msgid "UNRELIABLE_INFO_FRICTION" 
+msgstr "unreliable information about friction action"
+
+msgid "FRICTION_NOT_REPORTED" 
+msgstr "friction conditions not reported"
+
+msgid "FRICTION_COEFFICIENT" 
+msgstr "friction coefficient {0:.2f}"
+
+
+#OTHER
+
+msgid "AND"
+msgstr " and "
+ 
+msgid "WITH"
+msgstr "with"
+
+#Runway state
+
+msgid "MORE_THAN"
+msgstr " more than "
+
+msgid "LESS_THAN"
+msgstr " less than "
+
+msgid "-"
+msgstr " - "
+
+msgid "INCREASING"
+msgstr " increasing "
+
+msgid "DECREASING"
+msgstr" decreasing "
+
+msgid "NO_CHANGE"
+msgstr" no change "
+
+msgid "ON_RANWAY"
+msgstr " on ranway "
+
+#Weather phenomena
+msgid "THUNDERSTORM_IN_THE_VICINITY"
+msgstr " thunderstorm in the vicinity"
+
+msgid "DUSTSTORM_IN_THE_VICINITY"
+msgstr " duststorm in the vicinity"
+
+msgid "SANDSTORM_IN_THE_VICINITY"
+msgstr " sandstorm in the vicinity"
+
+msgid "FOG_IN_THE_VICINITY" 
+msgstr " fog in the vicinity" 
+
+msgid "FUNNEL_CLOUDS_IN_THE_VICINITY"
+msgstr " funnel cloud(s) in the vicinity"
+
+msgid "SHOWER_IN_THE_VICINITY"
+msgstr " shower in the vicinity"
+
+msgid "DUST_SAND_WHIRLS_IN_THE_VICINITY"
+msgstr " dust/sand whirls in the vicinity"
+
+msgid "VOLCANIC_ASH_IN_THE_VICINITY"
+msgstr " volcanic ash in the vicinity"
+
+msgid "BLOWING_WIDESPREAD_DUST_IN_THE_VICINITY"
+msgstr " blowing widespread dust in the vicinity"
+
+msgid "BLOWING_SAND_IN_THE_VICINITY"
+msgstr " blowing sand in the vicinity"
+
+msgid "BLOWING_SNOW_IN_THE_VICINITY"
+msgstr " blowing snow in the vicinity"
+
+#msgid "LIGHT"
+#msgstr " light"
+
+#msgid "HEAVY"
+#msgstr " heavy"
+
+msgid "MODERATE"
+msgstr " moderate"
+
+
+#msgid "THUNDERSTORM" 
+#msgstr " thunderstorm"
+
+#msgid "FREEZING" 
+#msgstr " freezing"
+
+msgid "SHALLOW_FOG" 
+msgstr " shallow fog"
+
+msgid "PATCHES_FOG" 
+msgstr " patches fog"
+
+msgid "PARTIAL_FOG" 
+msgstr " partial fog"
+
+msgid "LOW_DRIFTING_WIDESPREAD_DUS"
+msgstr " low drifting widespread dus"
+
+msgid "LOW_DRIFTING_SAND" 
+msgstr " low drifting sand"
+
+msgid "LOW_DRIFTING_SNOW" 
+msgstr " low drifting snow"
+
+msgid "BLOWING_SNOW" 
+msgstr " blowing snow"
+
+msgid "BLOWING_SAND" 
+msgstr " blowing sand"
+
+msgid "BLOWING_WIDESPREAD_DUST" 
+msgstr " blowing widespread dust"
+
+msgid "SHOWERS_OF_RAIN" 
+msgstr " showers of rain"
+
+msgid "SHOWERS_OF_SNOW" 
+msgstr " showers of snow"
+
+msgid "SHOWERS_OF_SMALL_HAIL" 
+msgstr " showers of small hail"
+
+msgid "SHOWERS_OF_HAIL" 
+msgstr " showers of hail"
+
+msgid "SHOWERS_OF_UNKNOWN_PRECIPITATIO" 
+msgstr " showers of unknown precipitatio"
+
+msgid "SHOWERS_OF_RAIN_AND_SNOW" 
+msgstr " showers of rain and snow"
+
+msgid "SHOWERS_OF_RAIN_AND_SMALL_HAIL" 
+msgstr " showers of rain and small hail"
+
+msgid "SHOWERS_OF_SMALL_HAIL_AND_RAIN" 
+msgstr " showers of small hail and rain"
+
+msgid "SHOWERS_OF_SNOW_AND_RAIN" 
+msgstr " showers of snow and rain"
+
+#msgid "DRIZZLE" 
+#msgstr " drizzle "
+
+#msgid "RAIN" 
+#msgstr " rain"
+
+#msgid "HAIL" 
+#msgstr " hail"
+
+msgid "SMALL_HAIL_AND_OR_SNOW_PELLETS"
+msgstr " small hail and/or snow pellets"
+
+#msgid "UNKNOWN_PRECIPITATION" 
+#msgstr " unknown precipitation"
+
+#msgid "SNOW" 
+#msgstr " snow"
+
+#msgid "SNOW_GRAINS" 
+#msgstr " snow grains"
+
+#msgid "ICE_CRYSTALS" 
+#msgstr " ice crystals"
+
+msgid "ICE_RAIN" 
+msgstr " ice rain"
+
+msgid "RAIN_AND_HAIL" 
+msgstr " rain and hail"
+
+msgid "RAIN_AND_SNOW_PELLETS" 
+msgstr " rain and snow pellets"
+
+msgid "SNOW_AND_RAIN" 
+msgstr " snow and rain"
+
+msgid "RAIN_AND_SNOW" 
+msgstr " rain and snow"
+
+msgid "ICE_RAIN_AND_SNOW" 
+msgstr " ice rain and snow"
+
+msgid "RAIN_ICE_RAIN_AND_SNOW" 
+msgstr " rain, ice rain and snow"
+
+msgid "SHOWER_RAIN_AND_HAIL" 
+msgstr " shower rain and hail"
+
+#msgid "MIST" 
+#msgstr " mist"
+
+#msgid "FOG" 
+#msgstr " fog"
+
+#msgid "SMOKE" 
+#msgstr " smoke"
+
+#msgid "VOLCANIC_ASH" 
+#msgstr " volcanic ash"
+
+msgid "WIDESPREAD_DUST" 
+msgstr " widespread dust"
+
+#msgid "SAND" 
+#msgstr " sand"
+
+#msgid "HAZE" 
+#msgstr " haze"
+
+#msgid "DUST" 
+#msgstr " dust"
+
+#msgid "SQUALLS" 
+#msgstr " squalls"
+
+#msgid "FUNNEL_CLOUD" 
+#msgstr " funnel cloud"
+
+#msgid "SANDSTORM" 
+#msgstr " sandstorm"
+
+#msgid "DUSTSTORM" 
+#msgstr " duststorm"
+
+msgid "NIL_SIGNIFICANT_WEATHER"
+msgstr " nil significant weather"
+
+#cloud
+msgid "CLOUD_AMOUNT_FEW" 
+msgstr " Cloud amount few (1 to 2 oktas) on high "
+
+msgid "CLOUD_AMOUNT_SCATTERED" 
+msgstr " Cloud amount scattered (3 to 4 oktas) on high "
+
+msgid "CLOUD_AMOUNT_BROKEN" 
+msgstr " Cloud amount broken (5 to 7 oktas) on high "
+
+msgid "CLOUD_AMOUNT_OVERCAST" 
+msgstr " Cloud amount overcast (8 oktas) on high "
+
+#msgid "NO_SIGNIFICANT_CLOUDS" 
+#msgstr " No significant clouds"
+
+#msgid "CLEAR" 
+#msgstr " Clear"
+
+#msgid "VERTICAL_VISIBILITY" 
+#msgstr " Vertical visibility: "
+
+msgid "AUTOMATIC_MONITORING_SYSTEM_DOES_NOT_DETECT_CLOUDS" 
+msgstr " Automatic monitoring system does not detect clouds"
+
+#msgid "CUMULONIMBUS" 
+#msgstr " cumulonimbus"
+
+#msgid "TOWERING_CUMULUS" 
+#msgstr " towering cumulus"
+
+msgid "NOT_DETECT" 
+msgstr " not detect"
+
+msgid "TEMPERATURE:_OF_AIR_DEW-POINT"
+msgstr " Temperature: of air {0}°C, dew-point {1}°C"
+
+msgid "THE_MAXIMUM_TEMPERATURE_IS_PREDICTED_TO_BE__TH__AT__" 
+msgstr " The maximum temperature is predicted to be {0}C {1}-th at {2}:00UTC"
+
+msgid "THE_MINIMUM_TEMPERATURE_IS_PREDICTED_TO_BE__TH__AT__" 
+msgstr " The minimum temperature is predicted to be {0}C {1}-th at {2}:00UTC"
+
+msgid "THE_ATMOSPHERIC_PRESSURE" 
+msgstr " The atmospheric pressure: {0} {1}"
+
+msgid "THE_PRESSURE_UNITS_HPA" 
+msgstr " hPa"
+
+msgid "THE_PRESSURE_UNITS_INCH" 
+msgstr " inch"
+
+#msgid "WIND_SHEAR" 
+#msgstr " Wind shear {0}{1}{2}{3}"
+
+msgid "WIND_SHEAR" 
+msgstr "wind shear"
+
+msgid "AERODROME_IS_CLOSED_DUE_TO_EXTREME_DEPOSIT_OF_SNOW" 
+msgstr " Aerodrome is closed due to extreme deposit of snow"
+
+
+#Other
+msgid "FROM"
+msgstr " from {0}"
+
+msgid "UNTIL"
+msgstr " until {0}"
+
+msgid "AT"
+msgstr " at {0}"
+
+
+######### WAREP #################
+
+msgid "W_UNKNOWNG_TYPE_MESSGE"
+msgstr "Unknowng type messge (must be STORM or AVIA): type={0}"
+
+msgid "W_UNKNOWNG_TITLE_MESSAGE"
+msgstr "Unknowng title message (must be WAREP): title={0}"
+
+msgid "W_UNKNOWNG_INDEX_STATION"
+msgstr "Unknowng index station (must be 5 numeric symbol, like 33348): index={0}"
+
+
+msgid "W_DATETIME_SECTION_ERROR"
+msgstr "Incorrect date time section - {0}"
+
+msgid "W_WIND" 
+msgstr "Wind: "
+
+msgid "W_SQUALL" 
+msgstr "Squall: "
+
+msgid "W_HEAVY_SQUALL " 
+msgstr "Heavy squall: "
+
+msgid "W_TORNADO" 
+msgstr "Tornado "
+
+msgid "W_WIND_DIRECT_SPEED_GUST"
+msgstr " {0}&#730, {1} mps, gust {2} mps."
+
+msgid "W_WIND_SECTION_ERROR"
+msgstr "Incorrect wind section - {0}"
+
+msgid "W_WIND_TORNADO_DIRECTION" 
+msgstr " In direction {0} deg."
+
+msgid "W_PRECIPITATION_AMOUNT" 
+msgstr "amount {0} mm for the period {1} hour"
+
+msgid "W_PRECIPITATION_SECTION_ERROR" 
+msgstr "Incorrect precipitation section - {0}"
+
+msgid "W_METERS" 
+msgstr " meters."
+
+msgid "W_KM" 
+msgstr " kilometers."
+
+msgid "W_VISIBILITY" 
+msgstr "Visibility is "
+
+msgid "W_VISIBILITY_SECTION_ERROR"
+msgstr "Incorrect visibility section - {0}"
+
+msgid "W_TIME" 
+msgstr "Duration of phenomena {0} hour."
+
+msgid "W_NO_CLOUDS" 
+msgstr "No clouds."
+
+msgid "W_CLOUDS" 
+msgstr "Clouds {0} oktans."
+
+msgid "W_LOW_VISIBILITY" 
+msgstr "Low visibility"
+
+msgid "W_CLOUD_COVER" 
+msgstr "Cloud cover is indiscernible for reasons other than fog or other meteorological phenomena, or observation is not made"
+
+msgid "W_CIRRUS" 
+msgstr "Cirrus"
+
+msgid "W_CIRROCUMULUS" 
+msgstr "Cirrocumulus"
+
+msgid "W_CIRROSTRATUS" 
+msgstr "Cirrostratus"
+
+msgid "W_ALTOCUMULUS" 
+msgstr "Altocumulus"
+
+msgid "W_ALTOSTRATUS" 
+msgstr "Altostratus"
+
+msgid "W_NIMBOSTRATUS" 
+msgstr "Nimbostratus"
+
+msgid "W_STRATOCUMULUS" 
+msgstr "Stratocumulus"
+
+msgid "W_STRATUS"
+msgstr "Stratus"
+
+msgid "W_CUMULUS" 
+msgstr "Cumulus"
+
+msgid "W_CUMULONIMBUS" 
+msgstr "Cumulonimbus"
+
+msgid "W_CLOUD_NOT" 
+msgstr "Cloud not visible owning to darkness, fog, duststorm, sandstorm, or other analogous phenomena"
+
+msgid "W_CLOUD_HEIGHT" 
+msgstr " on height {0} meters."
+
+msgid "W_CLOUD_SECTION_ERROR" 
+msgstr "Incorrect cloud section - {0}"
+
+msgid "W_HAIL" 
+msgstr "Hail {0} mm."
+
+msgid "W_HAIL_MORE" 
+msgstr "Hail more than 50 mm."
+
+msgid "W_HAIL_FIN" 
+msgstr "Hail finish"
+
+msgid "W_INCORECT_HAIL_BLOCK"
+msgstr "Incorect hail section - {0}"
+
+msgid "W_SAVING" 
+msgstr "saving"
+
+msgid "W_INCREASE" 
+msgstr "increase"
+
+msgid "W_BEGINNING" 
+msgstr "beginning"
+
+msgid "W_DEP" 
+msgstr "deposits {0} mm, temp {1}{2}, {3}"
+
+msgid "W_DEP_MORE" 
+msgstr "deposits more 50 mm, temp {0}{1}, {2}"
+
+msgid "W_ICE_RAIN" 
+msgstr "Ice rain, "
+
+msgid "INCORECT_TEMPERATURE_SECTION"
+msgstr "Incorrect temperature section - {0}"     
+
+msgid "W_THUNDERSTORM"
+msgstr "Thunderstorm "
+
+msgid "W_TEMPERATURE" 
+msgstr "temperature {0}{1}."
+
+msgid "W_ALL_MOUNTAINS_OPEN" 
+msgstr "All mountains open, only small amounts of cloud present."
+
+msgid "W_MOUNTAINS_PARTLY" 
+msgstr "Mountains partly covered with detached clouds."
+
+msgid "W_ALL_MOUNTAIN_SLOPES" 
+msgstr "All mountain slopes covered, peaks and passes free."
+
+msgid "W_MOUNTAINS_OPEN" 
+msgstr "Mountains open on observers side , but a continuous wall of cloud on the other side."
+
+msgid "W_CLOUDS_LOW_OPEN" 
+msgstr "Clouds low above the mountains, but all slopes and mountains open."
+
+msgid "W_CLOUDS_LOW" 
+msgstr "Clouds low above the mountains, peaks partly covered by precipitation trails or clouds."
+
+msgid "W_ALL_PEAKS_COVERED" 
+msgstr "All peaks covered but passes open, slopes either open or covered."
+
+msgid "W_MOUNTAINS_GENERALLYLY" 
+msgstr "Mountains generally covered but some peaks free, slopes wholly or partially covered."
+
+msgid "W_ALL_PEAKS_PASSES" 
+msgstr "All peaks, passes and slopes covered."
+
+msgid "W_MOUNTAINS_CANNOT_BE_SEEN" 
+msgstr "Mountains cannot be seen owing to darkness, fog, snowstorm, precipitation, etc."
+
+msgid "W_INCORRECT_MOUNTS_SECTION"
+msgstr "Incorrect mounts section - {0}"
+
+msgid "W_NO_CHANGE" 
+msgstr "No change"
+
+msgid "W_CUMULIFICATION" 
+msgstr "Cumulification"
+
+msgid "W_SLOW_ELEVATION" 
+msgstr "Slow elevation"
+
+msgid "W_RAPID_ELEVATION" 
+msgstr "Rapid elevation"
+
+msgid "W_ELEVATION" 
+msgstr "Elevation and stratification"
+
+msgid "W_SLOW_LOWERING" 
+msgstr "Slow lowering"
+
+
+msgid "W_RAPID_LOWERING" 
+msgstr "Rapid lowering"
+
+msgid "W_STRATIFICATION" 
+msgstr "Stratification"
+
+msgid "W_STRATIFICATION_LOWERING" 
+msgstr "Stratification and lowering"
+
+msgid "W_RAPID_CHANGE"
+msgstr "Rapid change"
+
+msgid "W_GLAZE" 
+msgstr "Glaze, "
+
+msgid "W_COMPLEX_DEPOSITION" 
+msgstr "Complex deposition, "
+
+msgid "W_FINISH" 
+msgstr "finish"
+
+msgid "W_STRONG_GLAZE" 
+msgstr "Strong glaze, "
+
+msgid "W_HOARFROST" 
+msgstr "Hoarfrost, "
+
+msgid "W_STRONG_COMPLEX_DEPOSITION" 
+msgstr "Strong complex deposition, "
+
+msgid "W_SLEET_ON_ROADS"
+msgstr "Deposition on the roads, "
+
+msgid "W_RAIN" 
+msgstr "Rain "
+
+msgid "W_INTENSE_RAIN" 
+msgstr "Intense (heavy) rain "
+
+msgid "W_HEAVY_SNOW" 
+msgstr "Heavy snow "
+
+msgid "W_NOT_MESSURED"
+msgstr "Not messured"
+
+####################################################################################
+  
+#: .\mbr\pdfprint.py:194
+msgid "Temperatures statistics"
+msgstr ""
+
+#: .\mbr\pdfprint.py:215
+msgid "Precipitation probability statistics"
+msgstr ""
+
+#: .\mbr\pdfprint.py:248
+msgid "Wind speed statistics"
+msgstr ""
+
+#: .\mbr\templates\mbr\contacts.html:5 .\mbr\templates\mbr\header.html:17
+msgid "Contacts"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:6
+msgid "Flight_id"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:7
+msgid "Number"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:8
+msgid "Airport_from"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:9
+msgid "Airport_to"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:10
+msgid "Alt. airports"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:12
+msgid "Departure"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:14
+msgid "Duration"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:15
+msgid "Firs"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:16
+msgid "Flight levels"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:17
+msgid "Regions"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:19
+msgid "AIRMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:20
+#: .\mbr\templates\mbr\info\gamet.html:6
+msgid "GAMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:21
+msgid "Volcanic ash"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:22
+msgid "Delete"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:23
+msgid "Update"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:21
+msgid "Phenomena animation"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:22
+msgid "Heights animation"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:23
+msgid "Flight List"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:24
+msgid "Log request"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:26
+msgid "Warep (Test)"
+msgstr ""
+
+#: .\mbr\templates\mbr\header.html:14
+msgid "Home"
+msgstr ""
+
+#: .\mbr\templates\mbr\header.html:15
+msgid "Meteo Briefing"
+msgstr ""
+
+#: .\mbr\templates\mbr\header.html:16
+msgid "VOA data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\airep.html:6
+msgid "AIREP"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\airep.html:21
+#: .\mbr\templates\mbr\info\gamet.html:20
+#: .\mbr\templates\mbr\info\sigmet_airmet.html:38
+#: .\mbr\templates\mbr\info\volcanic_ash.html:18
+#, python-format
+msgid "FIR with index %(index)s is absent in our database"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\opmet.html:7
+msgid "OPMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\opmet.html:35
+#, python-format
+msgid "Airport with index %(index)s is absent in our database"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:6
+msgid "Other charts"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:11
+msgid "Surface analysis"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:13
+msgid "Surface analysis - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:19
+msgid "Radar meteorological phenomena chart"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:21
+msgid "Radar meteorological phenomena chart - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:27
+msgid "Radar echo heights chart"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:29
+msgid "Radar echo heights chart - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:35
+msgid "Complex radar chart (Russian HMC)"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:37
+msgid "Complex radar chart (Russian HMC) - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:44
+msgid "Volcanic Ash Dispersion Chart issued by "
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:48
+msgid "Volcanic chart - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\sigmet_airmet.html:8
+msgid "SIGMET, AIRMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\sigmet_airmet.html:12
+msgid "SIGMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\volcanic_ash.html:5
+msgid "VOLCANIC ASH"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:6
+msgid "WAFC charts"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:18
+#, python-format
+msgid " SIGWX for %(reg)s region "
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:28
+msgid "No data for this period"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:32
+#, python-format
+msgid ""
+" WIND/TEMP charts for %(reg)s\n"
+"                                    region "
+msgstr ""

@@ -1,0 +1,18 @@
+{% extends 'mbr/base.html' %}
+
+{% block content %}
+<div id="slideshow-container">
+    {% for scan in scans %}
+        <div class="mySlides fade">
+            <img src="data:image/png;base64,{{ scan.in_base64 }}">
+        </div>
+    {% endfor %}
+
+    <div style="text-align:center">
+        {% for scan in scans %}
+            <span class="dot">{{ scan.valid_begin }}</span>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}

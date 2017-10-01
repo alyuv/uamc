@@ -1,0 +1,27 @@
+{% load template_tag %}
+{% load i18n %}
+<div class="airep_block">
+    <fieldset>
+        <legend>
+            {% trans "AIREP Special" %}
+        </legend>
+        {% for index in fir_index %}
+            <div class="info_content">
+                {% if index in correct_fir %}
+                    <div class="airep">
+                        <div class="index">{{ index }}</div>
+                        {% for airep in aireps|access:index %}
+                            <div class="{{ airep.message_class }}">
+                                {{ airep.message }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="error_index">
+                        {% blocktrans %}FIR with index {{ index }} is absent in our database{% endblocktrans %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </fieldset>
+</div>

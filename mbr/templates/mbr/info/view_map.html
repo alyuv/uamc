@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="MeteoBriefing NAMC UAMC" />
+  <meta name="description" content="MeteoBriefing © UAMC &amp; 2017" />
+
+<style type="text/css">
+#divs {
+  float: left;
+  position:fixed;
+  left:0px;
+  top:0px;
+}
+
+.f_button {
+  padding: 0px 0px;
+  font-size: 11px;
+  color: #fff; text-transform: uppercase;
+  cursor: pointer;
+
+  box-shadow: 0px 1px 3px #000;
+  -o-box-shadow: 0px 1px 3px #000;
+  -moz-box-shadow: 0px 1px 3px #000;
+  -webkit-box-shadow: 0px 1px 3px #000;
+
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #3a6ba6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #678ec8), color-stop(1, #6688c8));
+  background: -moz-linear-gradient(bottom, #557199, #3e5d90);
+  border: 1px solid #3a70b3;
+  text-shadow: 0px 1px 1px #039;
+  -o-text-shadow: 0px 1px 1px #039;
+  -moz-text-shadow: 0px 1px 1px #039;
+  -webkit-text-shadow: 0px 1px 1px #039;
+}
+
+.f_button:hover {
+    padding: 4px 4px;
+    font-size: 11px;
+
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    box-shadow: 0px 1px 3px #000;
+    -o-box-shadow: 0px 1px 3px #000;
+    -moz-box-shadow: 0px 1px 3px #000;
+    -webkit-box-shadow: 0px 1px 3px #000;
+
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #1f4b90;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #386099), color-stop(1, #294c80));
+    background: -moz-linear-gradient(bottom, #2b5580, #2e5199);
+    border-color: #335ca6;
+}
+</style>
+
+<script type="text/javascript">
+
+var DRAG_lastX, DRAG_lastY, DRAG_dragging, imgmap;
+
+function load(){
+  imgmap = document.getElementById("imgmap");
+  imgmap.addEventListener("mousedown", DRAG_begindrag, true);
+}
+
+function DRAG_begindrag() {
+  var rightclick;
+  if (!e) var e = window.event;
+  if (e.which) rightclick = (e.which == 3);
+  else if (e.button) rightclick = (e.button == 2);
+  alert('Rightclick: ' + rightclick); // true or false
+
+  imgmap = document.getElementById("imgmap");
+  if (imgmap.addEventListener){
+    imgmap.addEventListener("mousemove", DRAG_drag, true);
+  } else if (imgmap.attachEvent) {
+    imgmap.attachEvent("onmousemove", DRAG_drag);
+  }
+  DRAG_lastX=e.pageX;
+  DRAG_lastY=e.pageY;
+  DRAG_dragging=true;
+  return false;
+}
+
+function DRAG_enddrag() {
+  imgmap = document.getElementById("imgmap");
+  imgmap.removeEventListener("mousemove", DRAG_drag, true);
+  DRAG_dragging=false;
+  return true;
+}
+
+function DRAG_drag() {
+  if (DRAG_dragging) {
+    imgmap = document.getElementById("imgmap");
+    scrollBy(-(imgmap.pageX-DRAG_lastX), -(imgmap.pageY-DRAG_lastY));
+    DRAG_lastX = imgmap.pageX;
+    DRAG_lastY = imgmap.pageY;
+  //  document.diva.style.top=e.pageY;
+  //  document.diva.style.left=e.pageX;
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function maxim(){
+  imgmap.width=imgmap.width*1.2  ;
+  imgmap.height=imgmap.height*1.2 ;
+}
+
+
+function minim(){
+  imgmap.width=imgmap.width/1.2    ;
+  imgmap.height=imgmap.height/1.2   ;
+}
+
+
+function reset(){
+  imgmap.width=imgmap.naturalWidth ;
+  imgmap.height=imgmap.naturalHeight ;
+}
+
+</script>
+
+</head>
+
+<body onload="load();">
+
+<div id="divs" name="diva">
+  <input value="✕" onClick="javascript:window.close()" type="button" alt="Close this map"  class="f_button">
+  <input value="+" onClick="javascript:maxim()" type="button" alt="Zoom in map"  class="f_button">
+  <input value="-" onClick="javascript:minim()" type="button" alt="Zoom out map" class="f_button">
+  <input value="*" onClick="javascript:reset()" type="button" alt="Reset size"    class="f_button">
+</div>
+<img id="imgmap" src="data:image/png;base64,{{ map.in_base64 }}" alt="Gfd">
+</body>
+</html>

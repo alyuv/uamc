@@ -1,0 +1,9 @@
+<h1>Update Flights - Test</h1>
+{{ form.id }}
+<form action="{% url 'mbr_update_flight' pk=key %}" method="POST">
+  {% csrf_token %}
+  <ul>
+    {{ form.as_ul }}
+  </ul>
+  <input id="save_contact" type="submit" value="Update" />
+</form>

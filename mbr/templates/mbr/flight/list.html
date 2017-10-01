@@ -1,0 +1,85 @@
+{% extends 'mbr/base.html' %}
+{% load i18n %}
+{% block content %}
+    <table id="flight_list">
+        <tr>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Flight_id' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Number' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Airport_from' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Airport_to' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Alt. airports' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Departure' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Duration' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Firs' %}</p></th>
+            <th colspan="10">{% trans 'Flight levels' %}</th>
+            <th colspan="9">{% trans 'Regions' %}</th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'AIRMET' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'GAMET' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Volcanic ash' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Delete' %}</p></th>
+            <th rowspan="2" class="verticalTableHeader"><p>{% trans 'Update' %}</p></th>
+        </tr>
+        <tr>
+            <th class="verticalTableHeader"><p>450</p></th>
+            <th class="verticalTableHeader"><p>410</p></th>
+            <th class="verticalTableHeader"><p>390</p></th>
+            <th class="verticalTableHeader"><p>360</p></th>
+            <th class="verticalTableHeader"><p>340</p></th>
+            <th class="verticalTableHeader"><p>320</p></th>
+            <th class="verticalTableHeader"><p>300</p></th>
+            <th class="verticalTableHeader"><p>270</p></th>
+            <th class="verticalTableHeader"><p>240</p></th>
+            <th class="verticalTableHeader"><p>180</p></th>
+            <th class="verticalTableHeader"><p>140</p></th>
+            <th class="verticalTableHeader"><p>100</p></th>
+            <th class="verticalTableHeader"><p>050</p></th>
+            <th class="verticalTableHeader"><p>C</p></th>
+            <th class="verticalTableHeader"><p>G</p></th>
+            <th class="verticalTableHeader"><p>H</p></th>
+            <th class="verticalTableHeader"><p>EUR</p></th>
+            <th class="verticalTableHeader"><p>MID</p></th>
+            <th class="verticalTableHeader"><p>SASIA</p></th>
+        </tr>
+
+        {% for flight in fligts_list %}
+            <tr>
+                <td>{{ flight.id }}</td>
+                <td>{{ flight.number }}</td>
+                <td>{{ flight.airport_from }}</td>
+                <td>{{ flight.airport_to }}</td>
+                <td>{{ flight.alt_airport }}</td>
+                <td>{{ flight.departure_time|time:"H:i" }}</td>
+                <td>{{ flight.flight_duration|time:"H:i" }}</td>
+                <td>{{ flight.firs }}</td>
+                <td><input type="checkbox" disabled {% if flight.level450 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level410 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level390 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level360 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level340 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level320 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level300 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level270 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level240 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level180 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level140 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level100 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.level050 %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.region_c %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.region_g %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.region_h %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.region_eur %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.region_mid %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.region_sasia %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.airmet %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.gamet %}checked{% endif %}/></td>
+                <td><input type="checkbox" disabled {% if flight.volcanic_ash %}checked{% endif %}/></td>
+                <td><a href="{% url 'mbr_delete_flight' pk=flight.id %}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                </td>
+                <td><a href="{% url 'mbr_update_flight' pk=flight.id %}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+    <a href="{% url 'mbr_add_flight' %}">Add flight</a>
+{% endblock %}

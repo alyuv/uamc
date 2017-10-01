@@ -1,0 +1,23 @@
+{% extends "mbr/base.html" %}
+{% load i18n %}
+{% block content %}
+    <fieldset>
+        <legend>Log request result. User: <strong>{% firstof user.get_short_name user.get_username %}</strong></legend>
+        <table id="tbl_loglist" border="0" cellpadding="0" cellspacing="1">
+            <tr id="tr_header">
+                <th width="10%" >Action Date</th>
+                <th>Operation</th>
+                <th>User</th>
+                <th>Request</th>
+            </tr>
+            {% for log_request in log_request_list %}
+                <tr>
+                    <td>{{ log_request.actiondate|date:'Y-m-d H:i' }}</td>
+                    <td>{{ log_request.operation }}</td>
+                    <td>{{ log_request.user }}</td>
+                    <td>{{ log_request.request }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </fieldset>
+{% endblock %}

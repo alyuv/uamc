@@ -1,0 +1,43 @@
+{% load template_tag %}
+{% load i18n %}
+<div class="wafc_block">
+    <fieldset>
+        <legend> {% trans "WAFC charts" %} </legend>
+
+        {% for valid_time_charts in wafc_charts%}
+
+            <div class="info_content">
+                <div class="wafc">
+                    <div class="wafc_header">WAFC charts valid on {{ valid_time_charts|date:"Y-m-d H:i" }} UTC</div>
+                    {% for region in fly_regions %}
+                        <div class="region">
+                            <div class="sigwx">
+                                {% blocktrans with reg=region %} Region {{ reg }}{% endblocktrans %}
+                                {% if wafc_charts|access:valid_time_charts|access:region|access:'SM' %}
+                                    <a target="_blank"
+                                       href="{% url 'view_sigwx' pk=wafc_charts|access:valid_time_charts|access:region|access:'SM'|access:'id' %}">SIGWX</a>
+                                {% elif wafc_charts|access:valid_time_charts|access:region|access:'SH' %}
+                                    <a target="_blank"
+                                       href="{% url 'view_sigwx' pk=wafc_charts|access:valid_time_charts|access:region|access:'SH'|access:'id' %}">SIGWX</a>
+                                {% else %}
+                                    {% trans "No data for this period" %}
+                                {% endif %}
+                            </div>
+                            <div class="grib">
+                                {% blocktrans with reg=region %} WIND/TEMP charts for {{ reg }}
+                                    region {% endblocktrans %}
+                                {% for fly_level in fly_levels %}
+                                    {% if wafc_charts|access:valid_time_charts|access:region|access:fly_level and not wafc_charts|access:valid_time_charts|access:region|access:'SM' %}
+                                        <a target="_blank"
+                                           href="{% url 'view_grib' pk=wafc_charts|access:valid_time_charts|access:region|access:fly_level|access:'id' %}">FL{{ fly_level }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+
+    </fieldset>
+</div>

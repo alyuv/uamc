@@ -1,0 +1,53 @@
+{% load template_tag %}
+{% load i18n %}
+<div class="other_charts">
+    <fieldset>
+        <legend>
+            {% trans "Other charts" %}
+        </legend>
+        <div class="info_content">
+            <div class="pyua98">
+                {% if pyua98 %}
+                    <a target="_blank" href="{% url 'view_pyua98' pk=pyua98 %}">{% trans "Surface analysis" %}</a>
+                {% else %}
+                    {% trans "Surface analysis - no valid data" %}
+                {% endif %}
+            </div>
+            <div class="phenomena_chart">
+                {% if phenomena_chart %}
+                    <a target="_blank"
+                       href="{% url 'view_mrl' pk=phenomena_chart.0 %}">{% trans "Radar meteorological phenomena chart" %}</a>
+                {% else %}
+                    {% trans "Radar meteorological phenomena chart - no valid data" %}
+                {% endif %}
+            </div>
+            <div class="echo_heights">
+                {% if heights_chart %}
+                    <a target="_blank"
+                       href="{% url 'view_mrl' pk=heights_chart.0 %}">{% trans "Radar echo heights chart" %}</a>
+                {% else %}
+                    {% trans "Radar echo heights chart - no valid data" %}
+                {% endif %}
+            </div>
+            <div class="qava91">
+                {% if qava91 %}
+                    <a target="_blank"
+                       href="{% url 'view_qava91' pk=qava91 %}">{% trans "Complex radar chart (Russian HMC)" %}</a>
+                {% else %}
+                    {% trans "Complex radar chart (Russian HMC) - no valid data" %}
+                {% endif %}
+            </div>
+            <div class="volcanic_chart">
+                {% if volcanic_charts %}
+                    {% for chart in volcanic_charts %}
+                        <a target="_blank" href="{% url 'view_volcanic_chart' pk=chart.0 %}">
+                            {% trans "Volcanic Ash Dispersion Chart issued by " %}{{ chart.2 }} {{ chart.1|date:'Y-m-d H:i' }}</a>
+                        <br>
+                    {% endfor %}
+                {% else %}
+                    {% trans "Volcanic chart - no valid data" %}
+                {% endif %}
+            </div>
+        </div>
+    </fieldset>
+</div>

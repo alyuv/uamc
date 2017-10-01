@@ -1,0 +1,278 @@
+<form action="{% url 'mbr_flight_data' %}" id="mbr_request" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>Flight</legend>
+        <div class="fieldWrapper">
+            {{ form.number.errors }}
+            <div class="row">
+                <div class="col-sm-6">
+                    Flight#
+                </div>
+                <div class="col-sm-5">
+                    {{ form.number }}
+                </div>
+            </div>
+        </div>
+        {#From airport#}
+        <div class="fieldWrapper">
+            {{ form.airport_from.errors }}
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form.airport_from.label_tag }}
+                </div>
+                <div class="col-sm-5">
+                    {{ form.airport_from }}
+                </div>
+            </div>
+        </div>
+        {#To airport#}
+        <div class="fieldWrapper">
+            {{ form.airport_to.errors }}
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form.airport_to.label_tag }}
+                </div>
+                <div class="col-sm-5">
+                    {{ form.airport_to }}
+                </div>
+            </div>
+        </div>
+
+        <div class="fieldWrapper">
+            {{ form.alt_airport.errors }}
+            {{ form.alt_airport.label_tag }}<br>
+            {{ form.alt_airport }}
+        </div>
+        <div class="fieldWrapper">
+            {{ form.departure_time.errors }}
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form.departure_time.label_tag }}
+                </div>
+                <div class="col-sm-5">
+                    {{ form.departure_time }}
+                </div>
+            </div>
+        </div>
+        <div class="fieldWrapper">
+            {{ form.flight_duration.errors }}
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form.flight_duration.label_tag }}
+                </div>
+                <div class="col-sm-5">
+                    {{ form.flight_duration }}
+                </div>
+            </div>
+        </div>
+        <div class="fieldWrapper">
+            {{ form.firs.errors }}
+            {{ form.firs.label_tag }}<br>
+            {{ form.firs }}
+        </div>
+    </fieldset>
+
+    <table width="100%" border="0">
+        <tr>
+            <td valign="top" width="35%">
+                <fieldset>
+                    <legend>Flight level</legend>
+                    <div class="fieldWrapper">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                {{ form.level450.errors }}
+                                <td>
+                                    {{ form.level450 }} FL450
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level410.errors }}
+                                <td>
+                                    {{ form.level410 }} FL410
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level390.errors }}
+                                <td>
+                                    {{ form.level390 }} FL390
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level360.errors }}
+                                <td>
+                                    {{ form.level360 }} FL360
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level340.errors }}
+                                <td>
+                                    {{ form.level340 }} FL340
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level320.errors }}
+                                <td>
+                                    {{ form.level320 }} FL320
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level300.errors }}
+                                <td>
+                                    {{ form.level300 }} FL300
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level270.errors }}
+                                <td>
+                                    {{ form.level270 }} FL270
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level240.errors }}
+                                <td>
+                                    {{ form.level240 }} FL240
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level180.errors }}
+                                <td>
+                                    {{ form.level180 }} FL180
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level140.errors }}
+                                <td>
+                                    {{ form.level140 }} FL140
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level100.errors }}
+                                <td>
+                                    {{ form.level100 }} FL100
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.level050.errors }}
+                                <td>
+                                    {{ form.level050 }} FL050
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+            </td>
+            <td valign="top">
+                <fieldset>
+                    <legend>Additional information</legend>
+                    <div class="fieldWrapper">
+                        {{ form.sigmet.errors }}
+                        <div class="row">
+                            <div class="col-sm-8">
+                                Sigmet
+                            </div>
+                            <div class="col-sm-2">
+                                <input id="id_sigrmet" name="sigmet" checked="" disabled="" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldWrapper">
+                        {{ form.airmet.errors }}
+                        <div class="row">
+                            <div class="col-sm-8">
+                                {{ form.airmet.label_tag }}
+                            </div>
+                            <div class="col-sm-2">
+                                {{ form.airmet }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldWrapper">
+                        {{ form.gamet.errors }}
+                        <div class="row">
+                            <div class="col-sm-8">
+                                {{ form.gamet.label_tag }}
+                            </div>
+                            <div class="col-sm-2">
+                                {{ form.gamet }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldWrapper">
+                        {{ form.volcanic_ash.errors }}
+                        <div class="row">
+                            <div class="col-sm-8">
+                                {{ form.volcanic_ash.label_tag }}
+                            </div>
+                            <div class="col-sm-2">
+                                {{ form.volcanic_ash }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldWrapper">
+                        {{ form.sigmet.errors }}
+                        <div class="row">
+                            <div class="col-sm-8">
+                                Airep
+                            </div>
+                            <div class="col-sm-2">
+                                <input id="id_sigrmet" name="sigmet" checked="" disabled="" type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Region</legend>
+                    <div class="fieldWrapper">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                                {{ form.region_c.errors }}
+                                <td>
+                                    {{ form.region_c }} C - Europe, Africa
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.region_g.errors }}
+                                <td>
+                                    {{ form.region_g }} G - Europe, Asia
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.region_h.errors }}
+                                <td>
+                                    {{ form.region_h }} H - North Athlantic
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.region_eur.errors }}
+                                <td>
+                                    {{ form.region_eur }} EUR - Europe
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.region_mid.errors }}
+                                <td>
+                                    {{ form.region_mid }} MID - Middle East
+                                </td>
+                            </tr>
+                            <tr>
+                                {{ form.region_sasia.errors }}
+                                <td>
+                                    {{ form.region_sasia }} SASIA - South Asia
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </fieldset>
+
+            </td>
+        </tr>
+    </table>
+    <div align="center">
+        <div>&nbsp;</div>
+            <input type="submit" name="_handleshow" value="Show">
+            <input type="submit" name="_getpdf" value="Get a PDF">
+
+    </div>
+</form>

@@ -1,0 +1,51 @@
+{% extends 'mbr/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <div class="mbr">
+        <div class="mbr_form">
+            <h3>Meteo Briefing Request Form</h3>
+            <div class="mbr_form_body">
+                {% block flight_table %}
+                    {% include 'mbr/mbr_flight_table.html' %}
+                {% endblock %}
+                {% block form %}
+                    {% include 'mbr/mbr_request_form.html' %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="mbr_content">
+            <nav>
+                <ul class="menu_mbr">
+                    <li><a href={% url 'mbr_mrl_j_animation' %}>{% trans 'Phenomena animation' %}</a></li>
+                    <li><a href={% url 'mbr_mrl_h_animation' %}>{% trans 'Heights animation' %}</a></li>
+                    <li><a href={% url 'mbr_flight_list' %}>{% trans 'Flight List' %}</a></li>
+                    <li><a href={% url 'mbr_set_log_request' %}>{% trans 'Log request' %}</a></li>
+                    <li><a href={% url 'warep' %}>{% trans 'Warep' %}</a></li>
+                </ul>
+            </nav>
+
+            {% block result %}
+                {% if airports %}
+                    <div id="response">
+                        {% include 'mbr/info/wafc.html' %}
+                        {% include 'mbr/info/other_charts.html' %}
+                        {% include 'mbr/info/opmet.html' %}
+                        {% include 'mbr/info/sigmet_airmet.html' %}
+                        {% include 'mbr/info/gamet.html' %}
+                        {% include 'mbr/info/airep.html' %}
+                    </div>
+                {% else %}
+                    <div class="help">
+                        {% if form.errors %}
+                            Correct the mistakes in the form
+                        {% endif %}
+                        <h4>Select flight or fill in the form</h4>
+                    </div>
+                {% endif %}
+
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

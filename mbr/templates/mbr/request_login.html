@@ -1,0 +1,24 @@
+{% extends "mbr/base.html" %}
+
+{% block content %}
+    <div class="home">
+        <h4>MeteoBriefing New</h4>
+        <p>
+            You should contact the service provider <a href="#">SE "UAMC"</a> for authorization in the system by
+            obtaining
+            the registration information containing user name and password. Contact information is stated in
+            the bottom of every page of the site.
+        </p>
+        <p>
+            Meteorological information is provided on the contractual basis.
+        </p>
+        <p>
+            More information +38(044)281 79-71
+        </p>
+        {% if not user.is_authenticated %}
+            {% include 'mbr/login.html' %}
+        {% else %}
+            <a href="{% url 'logout' %}">Log out</a>
+        {% endif %}
+    </div>
+{% endblock %}

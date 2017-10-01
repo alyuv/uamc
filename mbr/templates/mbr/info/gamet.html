@@ -1,0 +1,25 @@
+{% load template_tag %}
+{% load i18n %}
+<div class="gamet_block">
+    <fieldset>
+        <legend> {% trans "GAMET" %} </legend>
+        {% for index in fir_index %}
+            <div class="info_content">
+                {% if index in correct_fir %}
+                    <div class="index">{{ index }}</div>
+                    <div class="gamet">
+                        {% for gamet in gamets|access:index %}
+                            <div class="{{ gamet.message_class }}">
+                                {{ gamet.message|linebreaksbr }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="error_index">
+                        {% blocktrans %}FIR with index {{ index }} is absent in our database{% endblocktrans %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </fieldset>
+</div>

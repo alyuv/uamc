@@ -1,0 +1,11 @@
+{% extends 'mbr/base.html' %}
+{% load i18n %}
+{% block content %}
+    <h1>Delete Flight</h1>
+    <p>Are you sure want to delete {{ airlinesflights.flight_id }}?</p>
+    <form action="{% url 'mbr_delete_flight' pk=airlinesflights.id %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Yes, delete.">
+        <a href="{% url 'mbr_flight_list' %}">No, cancel</a>
+    </form>
+{% endblock %}

@@ -1,0 +1,24 @@
+<fieldset>
+    <legend>Flight table</legend>
+    <table id="tbl_fltlist" border="0" cellpadding="0" cellspacing="1">
+        <tr id="tr_header">
+            <th>Flight id</th>
+            <th>Flight#</th>
+            <th>From</th>
+            <th>To</th>
+        </tr>
+    {% for flight in flight_list %}
+        <tr>
+            <td>{{ flight.id }}</td>
+            <td>{{ flight.number }}</td>
+            <td>{{ flight.airport_from }}</td>
+            <td>{{ flight.airport_to }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <a href="{% url 'mbr_add_flight' %}"><i class="fa fa-plus" aria-hidden="true"></i>Add new flight</a>
+</fieldset>
+
+<script language="JavaScript">
+    var flight_list = {{ flight_data|safe }};
+</script>

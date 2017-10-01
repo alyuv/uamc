@@ -1,0 +1,23 @@
+{% load template_tag %}
+{% load i18n %}
+{% if form|data_form:'volcanic_ash' %}
+    <div class="volcanic_block">
+        {% trans "VOLCANIC ASH" %}
+        {% for index in fir_index %}
+            {% if index in correct_index %}
+                <div class="volcanic">
+                    <div class="index">{{ index }}</div>
+                    {% for volcanic in VA|access:index %}
+                        <div class="{{ volcanic.message_class }}">
+                            {{ volcanic.message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="error_index">
+                    {% blocktrans %}FIR with index {{ index }} is absent in our database{% endblocktrans %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}

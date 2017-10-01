@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-01 18:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\mbr\forms.py:12 .\mbr\forms.py:24
+msgid "Enter a valid index"
+msgstr ""
+
+#: .\mbr\forms.py:58
+msgid "Select one of the region"
+msgstr ""
+
+#: .\mbr\forms.py:67
+msgid "Select one of the fly level"
+msgstr ""
+
+#: .\mbr\metardecoding.py:6
+msgid "CORRECTED_REGULAR_REPORT_OF_THE_AERODROME"
+msgstr "Исправленная регулярная сводка аэродрома"
+
+#: .\mbr\pdfprint.py:194
+msgid "Temperatures statistics"
+msgstr ""
+
+#: .\mbr\pdfprint.py:215
+msgid "Precipitation probability statistics"
+msgstr ""
+
+#: .\mbr\pdfprint.py:248
+msgid "Wind speed statistics"
+msgstr ""
+
+#: .\mbr\templates\mbr\contacts.html:5 .\mbr\templates\mbr\header.html:17
+msgid "Contacts"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:6
+msgid "Flight_id"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:7
+msgid "Number"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:8
+msgid "Airport_from"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:9
+msgid "Airport_to"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:10
+msgid "Alt. airports"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:12
+msgid "Departure"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:14
+msgid "Duration"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:15
+msgid "Firs"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:16
+msgid "Flight levels"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:17
+msgid "Regions"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:19
+msgid "AIRMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:20
+#: .\mbr\templates\mbr\info\gamet.html:6
+msgid "GAMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:21
+msgid "Volcanic ash"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:22
+msgid "Delete"
+msgstr ""
+
+#: .\mbr\templates\mbr\flight\list.html:23
+msgid "Update"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:21
+msgid "Phenomena animation"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:22
+msgid "Heights animation"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:23
+msgid "Flight List"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:24
+msgid "Log request"
+msgstr ""
+
+#: .\mbr\templates\mbr\flightdata.html:26
+msgid "Warep (Test)"
+msgstr ""
+
+#: .\mbr\templates\mbr\header.html:14
+msgid "Home"
+msgstr ""
+
+#: .\mbr\templates\mbr\header.html:15
+msgid "Meteo Briefing"
+msgstr ""
+
+#: .\mbr\templates\mbr\header.html:16
+msgid "VOA data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\airep.html:6
+msgid "AIREP"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\airep.html:21
+#: .\mbr\templates\mbr\info\gamet.html:20
+#: .\mbr\templates\mbr\info\sigmet_airmet.html:38
+#: .\mbr\templates\mbr\info\volcanic_ash.html:18
+#, python-format
+msgid "FIR with index %(index)s is absent in our database"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\opmet.html:7
+msgid "OPMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\opmet.html:35
+#, python-format
+msgid "Airport with index %(index)s is absent in our database"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:6
+msgid "Other charts"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:11
+msgid "Surface analysis"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:13
+msgid "Surface analysis - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:19
+msgid "Radar meteorological phenomena chart"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:21
+msgid "Radar meteorological phenomena chart - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:27
+msgid "Radar echo heights chart"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:29
+msgid "Radar echo heights chart - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:35
+msgid "Complex radar chart (Russian HMC)"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:37
+msgid "Complex radar chart (Russian HMC) - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:44
+msgid "Volcanic Ash Dispersion Chart issued by "
+msgstr ""
+
+#: .\mbr\templates\mbr\info\other_charts.html:48
+msgid "Volcanic chart - no valid data"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\sigmet_airmet.html:8
+msgid "SIGMET, AIRMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\sigmet_airmet.html:12
+msgid "SIGMET"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\volcanic_ash.html:5
+msgid "VOLCANIC ASH"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:6
+msgid "WAFC charts"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:18
+#, python-format
+msgid " SIGWX for %(reg)s region "
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:28
+msgid "No data for this period"
+msgstr ""
+
+#: .\mbr\templates\mbr\info\wafc.html:32
+#, python-format
+msgid ""
+" WIND/TEMP charts for %(reg)s\n"
+"                                    region "
+msgstr ""
